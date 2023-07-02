@@ -26,3 +26,23 @@ input[type="text"] {
 
     font-family: "BIZ UDPGothic", sans-serif;
 }
+
+input[type="submit"],
+input[type="button"] {
+    font-family: "BIZ UDPGothic", sans-serif;
+    background-color: #3d68ff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #1e3dff;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active {
+    background-color: #0f1aff;
+}
