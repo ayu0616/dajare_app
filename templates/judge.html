@@ -9,21 +9,21 @@
     <body>
         <div class="container">
             <h1>駄洒落判定</h1>
-            <div style="font-size: 2rem">
+            <div style="font-size: 2rem; margin-bottom: 3rem">
                 {% if res %}
                 <p>駄洒落！！！</p>
                 {% else %}
                 <p>NOT 駄洒落</p>
                 {% endif %}
             </div>
-            <div>
+            <div style="margin-bottom: 3rem">
                 {% if res %}
-                <p>{{ sentence }} は駄洒落です。</p>
+                <p>「{{ sentence }}」は駄洒落です。</p>
                 {% else %}
-                <p>{{ sentence }} は駄洒落ではありません。</p>
+                <p>「{{ sentence }}」は駄洒落ではありません。</p>
                 {% endif %}
             </div>
-            <input type="button" onclick="goHome()" value="ホームに戻る"/>
+            <input type="button" onclick="goHome()" value="ホームに戻る" />
         </div>
 
         <script>
