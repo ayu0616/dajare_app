@@ -25,6 +25,13 @@ input[type="text"] {
     padding: 0.25rem 0.5rem;
 
     font-family: "BIZ UDPGothic", sans-serif;
+
+    border: 1px lightgray solid;
+    border-radius: 0.25rem;
+}
+
+input[type="text"]:focus {
+    outline: 3px solid rgba(0, 0, 255, 0.5);
 }
 
 input[type="submit"],
