@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap");
+
+body {
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+
+
+div.container {
+    max-width: min(750px, 95vw);
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    height: 2.5rem;
+    width: 100%;
+}
+
+input[type="text"]{
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+}

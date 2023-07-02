@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/css/style.css" />
+        <title>判定結果 | 駄洒落判定</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>駄洒落判定</h1>
+            <div style="font-size: 2rem">
+                {% if res %}
+                <p>駄洒落！！！</p>
+                {% else %}
+                <p>NOT 駄洒落</p>
+                {% endif %}
+            </div>
+            <div>
+                {% if res %}
+                <p>{{ sentence }} は駄洒落です。</p>
+                {% else %}
+                <p>{{ sentence }} は駄洒落ではありません。</p>
+                {% endif %}
+            </div>
+            <input type="button" onclick="goHome()" value="ホームに戻る"/>
+        </div>
+
+        <script>
+            function goHome() {
+                location.href = "/";
+            }
+        </script>
+    </body>
+</html>
